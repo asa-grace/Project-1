@@ -10,16 +10,26 @@
 
 <body>
     <header>
-        <h1 class="page-title"></h1>Quote Generator!</h1>
-        <form id="quote-form">
-            <select name="quote-type" class="select-dropdown">
-                <option value="inspirational">Inspirational</option>
-                <option value="movie">Movie</option>
-                <option value="funny">Funny</option>
-                <option value="random">I'm feeling lucky</option>
-            </select>
-        </form>
+        <div class="page-title">
+            <h1>Quote Generator</h1>
+            <p>Select an option below to generate your quote of the day!</p>
+        </div>
     </header>
+
+    <main>
+        <div id="inspirational" class="option">
+            <button id="btn" class="btn">Inspirational</button>
+        </div>
+        <div id="movie" class="option">
+            <button id="btn" class="btn">Movie</button>    
+        </div>
+        <div id="funny" class="option">
+            <button id="btn" class="btn">Funny</button>  
+        </div>
+        <div id="random" class="option">
+            <button id="btn" class="btn">I'm feeling lucky</button>  
+        </div>
+    </main>
 </body>
 <script src="assets/js/script.js"></script>
 </html>
