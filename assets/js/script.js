@@ -16,8 +16,8 @@ function famousQuotes() {
       generatedQuote.innerHTML = selectedQuote;
 
       document.querySelector('#saveBtn').addEventListener("click", function() {
-        localStorage.setItem("savedQuote", selectedQuote);
-        var quoteStorage = localStorage.getItem('savedQuote');
+        localStorage.setItem("savedQuoteFamous", selectedQuote);
+        var quoteStorage = localStorage.getItem('savedQuoteFamous');
         console.log(quoteStorage);
         savedEl = document.querySelector('#quoteStorage');
         savedEl.innerHTML = quoteStorage;
@@ -39,8 +39,8 @@ function gameOfThrones() {
         generatedQuote.innerHTML = selectedQuote;
 
         document.querySelector('#saveBtn').addEventListener("click", function() {
-          localStorage.setItem("savedQuote", selectedQuote);
-          var quoteStorage = localStorage.getItem('savedQuote');
+          localStorage.setItem("savedQuoteGOT", selectedQuote);
+          var quoteStorage = localStorage.getItem('savedQuoteGOT');
           console.log(quoteStorage);
           savedEl = document.querySelector('#quoteStorage');
           savedEl.innerHTML = quoteStorage;
@@ -58,8 +58,8 @@ function randomQuotes () {
     generatedQuote.innerHTML = selectedQuote;
 
     document.querySelector('#saveBtn').addEventListener("click", function() {
-      localStorage.setItem("savedQuote", selectedQuote);
-      var quoteStorage = localStorage.getItem('savedQuote');
+      localStorage.setItem("savedQuoteRandom", selectedQuote);
+      var quoteStorage = localStorage.getItem('savedQuoteRandom');
       console.log(quoteStorage);
       savedEl = document.querySelector('#quoteStorage');
       savedEl.innerHTML = quoteStorage;
