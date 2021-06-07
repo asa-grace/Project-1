@@ -68,7 +68,7 @@ function randomQuotes () {
   })  
 }
 
-function randomGif() {
+/*function randomGif() {
   fetch(
     'https://api.giphy.com/v1/gifs/search?q=' +
       searchTerm +
@@ -88,7 +88,7 @@ function randomGif() {
       responseContainerE1.appendChild(gifImg);
 
     });
-  }
+  }*/
 
   var storedQuotes = [];
 
@@ -119,5 +119,4 @@ function randomGif() {
     var savedQuoteEl = document.querySelector('#quoteStorage');
     savedQuoteEl.textContent = '';
     localStorage.clear();
-
   }

@@ -59,12 +59,16 @@ h2 {
     color: white;
 }
 
-#btn {
+#btn,
+#saveBtn,
+#clearBtn {
     border-radius: 10px;
     padding: 5px;
 }
 
-#btn:hover {
+#btn:hover,
+#saveBtn:hover,
+#clearBtn:hover {
     background-color: blue;
     color: white;
 }
