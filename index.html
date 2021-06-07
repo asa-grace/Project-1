@@ -19,43 +19,27 @@
 
     <main>
         <div class="page-title">
-            <h1>Quote Generator</h1>
-            <p>Select an option below to generate your quote of the day! Then save the quote for later reflection</p>
+            <h2>Select an option below to generate your quote of the day! Then save the quote for later reflection</h2>
         </div>
 
         <!-- image container -->
         <div class="image-container">
             <img src=" ./assets/image/sergey-pesterev-6KCnl-EgbiU-unsplash.png " width="1000 " height="600 ">
-            <div id='quote-text' class="centered">Quotes go here</div>
-
-        <div id="inspirational" class="option">
-            <button id="btn" class="btn">Inspirational</button>
+            <div id='quote-text' class="centered">Your Daily Quote Awaits!</div>
         </div>
-        <div id="movie" class="option" onclick="gameOfThrones()">
-            <button id="btn" class="btn">Game of Thrones (NSFW)</button>    
-        </div>
-        <div id="funny" class="option" onclick="famousQuotes()">
-            <button id="btn" class="btn">Famous Quotes</button>  
-
-        </div>
-        </div>
-
-        <div id="response-container" class="response" onclick="randomGif()">
-            <button id="btn" class="btn">Random gif</button>
-
 
         <!-- buttons -->
         <div class="row ">
-            <div id="inspirational " class="option col-sm-3 ">
-                <button id="btn">Inspirational</button>
+            <div id="response-container" class="option col-sm-3">
+                <button id="btn" onclick="randomGif()">Random gif</button>
             </div>
-            <div id="movie " class="option col-sm-3 " onclick="gameOfThrones() ">
+            <div id="movie " class="option col-sm-3" onclick="gameOfThrones()">
                 <button id="btn">Game of Thrones</button>
             </div>
-            <div id="funny " class="option col-sm-3 " onclick="famousQuotes() ">
+            <div id="funny " class="option col-sm-3" onclick="famousQuotes()">
                 <button id="btn">Famous Quotes</button>
             </div>
-            <div id="random " class="option col-sm-3 " onclick="randomQuotes() ">
+            <div id="random " class="option col-sm-3" onclick="randomQuotes()">
                 <button id="btn">I'm feeling lucky</button>
             </div>
             <div id="savedQuote " class="saved ">
@@ -64,10 +48,10 @@
 
         </div>
 
-      
-        <div id="generatedQuote" class="option"></div>
-        <button id="saveBtn" class="btn">Save</button>
-        <br>
+        <!-- save button -->
+        <button id="saveBtn" onClick="window.location.reload(true)">Save</button>
+        <button id="clearBtn" onclick="clearSavedQuotes()">Clear</button>
+
         <div id="quoteStorage" class="option"></div>
 
     </main>
