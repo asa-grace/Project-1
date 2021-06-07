@@ -1,0 +1,38 @@
+* {
+    background-color: gainsboro;
+    text-align: center;
+}
+
+.page-title {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1,
+p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+}
+
+.row {
+    font-family: 'Merriweather', serif;
+}
+
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 49.5%;
+    transform: translate(-45%, -45%);
+    background: rgba(0, 128, 128, .3);
+    color: white;
+    padding: 40px;
+}
