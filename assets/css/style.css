@@ -41,14 +41,22 @@ h2 {
     margin-top: 30px;
 }
 
+#quote-storage {
+    display: flex;
+}
+
 #quote-text {
     font-size: 30px;
     margin: auto;
 }
 
 #savedQuoteP {
-    display:list-item;
+    display:inline-block;
     font-size: 25px;
+    border: 1px solid slateblue;
+    width: 75%;
+    background-color:rgba(0, 128, 128, .3);
+    color: white;
 }
 
 #btn {
