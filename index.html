@@ -22,12 +22,24 @@
             <h1>Quote Generator</h1>
             <p>Select an option below to generate your quote of the day! Then save the quote for later reflection</p>
         </div>
+
         <!-- image container -->
         <div class="image-container">
             <img src=" ./assets/image/sergey-pesterev-6KCnl-EgbiU-unsplash.png " width="1000 " height="600 ">
             <div id='quote-text' class="centered">Quotes go here</div>
+
+        <div id="inspirational" class="option">
+            <button id="btn" class="btn">Inspirational</button>
+        </div>
+        <div id="movie" class="option" onclick="gameOfThrones()">
+            <button id="btn" class="btn">Game of Thrones (NSFW)</button>    
+        </div>
+        <div id="funny" class="option" onclick="famousQuotes()">
+            <button id="btn" class="btn">Famous Quotes</button>  
+
         </div>
         </div>
+
         <!-- buttons -->
         <div class="row ">
             <div id="inspirational " class="option col-sm-3 ">
@@ -46,6 +58,13 @@
                 <h2></h2>
             </div>
         </div>
+
+      
+        <div id="generatedQuote" class="option"></div>
+        <button id="saveBtn" class="btn">Save</button>
+        <br>
+        <div id="quoteStorage" class="option"></div>
+
     </main>
 </body>
 
