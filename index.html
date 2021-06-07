@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Dancing+Script&family=Limelight&family=Merriweather:ital,wght@0,700;1,400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <title>Quote Generator</title>
 </head>
 
@@ -18,6 +22,12 @@
             <h1>Quote Generator</h1>
             <p>Select an option below to generate your quote of the day! Then save the quote for later reflection</p>
         </div>
+
+        <!-- image container -->
+        <div class="image-container">
+            <img src=" ./assets/image/sergey-pesterev-6KCnl-EgbiU-unsplash.png " width="1000 " height="600 ">
+            <div id='quote-text' class="centered">Quotes go here</div>
+
         <div id="inspirational" class="option">
             <button id="btn" class="btn">Inspirational</button>
         </div>
@@ -26,17 +36,39 @@
         </div>
         <div id="funny" class="option" onclick="famousQuotes()">
             <button id="btn" class="btn">Famous Quotes</button>  
+
         </div>
-        <div id="random" class="option" onclick="randomQuotes()">
-            <button id="btn" class="btn">I'm feeling lucky</button>  
         </div>
+
+        <!-- buttons -->
+        <div class="row ">
+            <div id="inspirational " class="option col-sm-3 ">
+                <button id="btn">Inspirational</button>
+            </div>
+            <div id="movie " class="option col-sm-3 " onclick="gameOfThrones() ">
+                <button id="btn">Game of Thrones</button>
+            </div>
+            <div id="funny " class="option col-sm-3 " onclick="famousQuotes() ">
+                <button id="btn">Famous Quotes</button>
+            </div>
+            <div id="random " class="option col-sm-3 " onclick="randomQuotes() ">
+                <button id="btn">I'm feeling lucky</button>
+            </div>
+            <div id="savedQuote " class="saved ">
+                <h2></h2>
+            </div>
+        </div>
+
       
         <div id="generatedQuote" class="option"></div>
         <button id="saveBtn" class="btn">Save</button>
         <br>
         <div id="quoteStorage" class="option"></div>
+
     </main>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="assets/js/script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+<script src="assets/js/script.js "></script>
+
 </html>
