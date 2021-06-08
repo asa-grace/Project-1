@@ -40,10 +40,6 @@ function gameOfThrones() {
 
         document.querySelector('#saveBtn').addEventListener("click", function() {
           localStorage.setItem("gotQuote" + i, selectedQuote);
-          //var quoteStorage = localStorage.getItem('gotQuote' + i);
-          //console.log(quoteStorage);
-          //savedEl = document.querySelector('#quoteStorage');
-          //savedEl.innerHTML = quoteStorage;
     }) 
   });
 }
@@ -60,10 +56,6 @@ function randomQuotes () {
 
     document.querySelector('#saveBtn').addEventListener("click", function() {
       localStorage.setItem("randomQuote" + i, selectedQuote);
-      //var quoteStorage = localStorage.getItem('randomQuote' + i);
-      //console.log(quoteStorage);
-      //savedEl = document.querySelector('#quoteStorage');
-      //savedEl.innerHTML = quoteStorage;
     }) 
   })  
 }
@@ -89,6 +81,24 @@ function randomQuotes () {
 
     });
   }*/
+
+  function ronSwanson() {
+    fetch(
+      'https://ron-swanson-quotes.herokuapp.com/v2/quotes'
+    )
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+      var selectedQuote = response;
+      var generatedQuote = document.querySelector('#quote-text');
+      generatedQuote.innerHTML = selectedQuote + ' -Ron Swanson';
+
+      document.querySelector('#saveBtn').addEventListener("click", function() {
+      localStorage.setItem("ronSwansonQuote" + i, selectedQuote + ' -Ron Swanson');
+      }) 
+    });
+  }
 
   var storedQuotes = [];
 
