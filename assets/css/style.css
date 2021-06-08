@@ -1,74 +1,77 @@
-* {
-    background-color: gainsboro;
-    text-align: center;
-}
-
-.page-title {
-    font-family: 'Cormorant Garamond', serif;
-}
-
-h1,
-p {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: bolder;
-}
-
-.image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h2 {
-    color: black;
-}
-
-.row {
-    font-family: 'Merriweather', serif;
-}
-
-.centered {
-    position: absolute;
-    top: 35%;
-    left: 47.3%;
-    transform: translate(-45%, -45%);
-    background: rgba(0, 128, 128, .3);
-    color: white;
-    padding: 40px;
-}
-
-.option {
-    margin-top: 30px;
-}
-
-#quote-storage {
-    display: flex;
-}
-
-#quote-text {
-    font-size: 30px;
-    margin: auto;
-}
-
-#savedQuoteP {
-    display:inline-block;
-    font-size: 25px;
-    border: 1px solid slateblue;
-    width: 75%;
-    background-color:rgba(0, 128, 128, .3);
-    color: white;
-}
-
-#btn,
-#saveBtn,
-#clearBtn {
-    border-radius: 10px;
-    padding: 5px;
-}
-
-#btn:hover,
-#saveBtn:hover,
-#clearBtn:hover {
-    background-color: blue;
-    color: white;
-}
+                                                                                                                                    * {
+                                                                                                                                    background-color: gainsboro;
+                                                                                                                                    text-align: center;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                .page-title {
+                                                                                                                                    font-family: 'Cormorant Garamond', serif;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                h1,
+                                                                                                                                p {
+                                                                                                                                    font-family: 'Cormorant Garamond', serif;
+                                                                                                                                    font-weight: bolder;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                .image {
+                                                                                                                                    display: flex;
+                                                                                                                                    justify-content: center;
+                                                                                                                                    align-items: center;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                h2 {
+                                                                                                                                    color: black;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                .row {
+                                                                                                                                    font-family: 'Merriweather', serif;
+                                                                                                                                    margin-right: 220px;
+                                                                                                                                    margin-left: 220px;
+                                                                                                                                    margin-bottom: 20px;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                .centered {
+                                                                                                                                    position: absolute;
+                                                                                                                                    top: 32%;
+                                                                                                                                    left: 47.3%;
+                                                                                                                                    transform: translate(-45%, -45%);
+                                                                                                                                    background: rgba(50, 0, 50, .3);
+                                                                                                                                    color: white;
+                                                                                                                                    padding: 40px;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                .option {
+                                                                                                                                    margin-top: 30px;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                #quote-storage {
+                                                                                                                                    display: flex;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                #quote-text {
+                                                                                                                                    font-size: 30px;
+                                                                                                                                    margin: auto;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                #savedQuoteP {
+                                                                                                                                    display: inline-block;
+                                                                                                                                    font-size: 15px;
+                                                                                                                                    box-shadow: 5px 7px darkgray;
+                                                                                                                                    width: 75%;
+                                                                                                                                    background-color: rgba(50, 0, 50, .4);
+                                                                                                                                    color: white;
+                                                                                                                                    font-family: 'Merriweather', serif;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                #btn,
+                                                                                                                                #saveBtn,
+                                                                                                                                #clearBtn {
+                                                                                                                                    border-radius: 10px;
+                                                                                                                                    padding: 5px;
+                                                                                                                                }
+                                                                                                                                
+                                                                                                                                #btn:hover,
+                                                                                                                                #saveBtn:hover,
+                                                                                                                                #clearBtn:hover {
+                                                                                                                                    background-color: blue;
+                                                                                                                                    color: white;
