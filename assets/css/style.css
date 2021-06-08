@@ -11,7 +11,11 @@ h1,
 p {
     font-family: 'Cormorant Garamond', serif;
     font-weight: bolder;
+}
+
+.quote-header {
     margin-bottom: 0px;
+    font-size: 75px;
 }
 
 .image {
