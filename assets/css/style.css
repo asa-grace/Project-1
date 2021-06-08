@@ -13,6 +13,11 @@ p {
     font-weight: bolder;
 }
 
+.quote-header {
+    margin-bottom: 0px;
+    font-size: 75px;
+}
+
 .image {
     display: flex;
     justify-content: center;
