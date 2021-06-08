@@ -48,7 +48,7 @@ function gameOfThrones() {
   });
 }
 
-function randomQuotes () {
+/*function randomQuotes () {
   fetch('https://api.quotable.io/random')
   .then(response => response.json())
   .then(data => {
@@ -66,29 +66,26 @@ function randomQuotes () {
       //savedEl.innerHTML = quoteStorage;
     }) 
   })  
-}
+}*/
 
-/*function randomGif() {
+function randomGif() {
   fetch(
-    'https://api.giphy.com/v1/gifs/search?q=' +
-      searchTerm +
-      '&api_key:shY7gu7Sxp8RYk8JryZPL6kh3oLs7coO&limit=1'
+    'https://api.giphy.com/v1/gifs/random?api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN'
   )
     .then(function(response) {
       return response.json();
     })
     .then(function(response) {
-      var responseContainerE1 = document.querySelector('#response-container');
-
-      responseContainerE1.innerHTML = '';
-
-      var gifImg = documentcreateElement('img');
-      gifImg.setAttribute('src', response.data[0].images.fixed_height.url);
-
-      responseContainerE1.appendChild(gifImg);
-
+      
+      var responseContainerEl = document.querySelector('#gifDisplay');
+      
+      var gifImg = document.createElement('img');
+      
+      gifImg.setAttribute('src', response.data.image_url);
+      
+      responseContainerEl.appendChild(gifImg);
     });
-  }*/
+}
 
   var storedQuotes = [];
 
