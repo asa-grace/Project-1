@@ -1,6 +1,13 @@
 * {
-    background-color: gainsboro;
+    background-image: url(https://cdn.pixabay.com/photo/2013/12/17/20/10/bubbles-230014_960_720.jpg);
     text-align: center;
+}
+
+/*Header*/
+
+header {
+    margin: 0px;
+    padding: 8px;
 }
 
 .page-title {
@@ -18,10 +25,16 @@ p {
     font-size: 75px;
 }
 
-.image {
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+img {
+    border-radius: 32px;
+    box-shadow: 0px 5px 30px hsla(113, 69%, 34%, 0.973);
 }
 
 h2 {
