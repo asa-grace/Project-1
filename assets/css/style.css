@@ -22,22 +22,39 @@ p {
 
 }
 
+img {
+    max-width: 1000px;
+    max-height: 600px;
+    width: 100%;
+    background-size: cover;
+}
 .quote-header {
     margin-bottom: 0px;
     font-size: 75px;
 }
 
-img {
-    border: 0;
-}
 .image-container {
-    display: flex;
+    position: relative;
     justify-content: center;
-    align-items: center;
-    padding: 20px 0 20px 0;
+}
+.centerContainer {
+    max-width: 1000px;
+    max-height: 600px;
+    position: absolute;
+    top: 40%;
+    left: 48.2%;
+    transform: translate(-45%, -45%);
+    background: rgba(50, 0, 50, .3);
+    color: white;
+    padding: 40px;
+}
+
+.centerContainer:hover {
+    background: rgba(50, 0, 50, .75);
 }
 
 img {
+    border: 0;
     border-radius: 32px;
     box-shadow: 0px 5px 30px hsla(113, 69%, 34%, 0.973);
 }
@@ -47,25 +64,9 @@ h2 {
 }
 
 .row {
-    margin-right: 220px;
-    margin-left: 220px;
-    margin-bottom: 20px;
     text-align: center;
 }
 
-.centered {
-    position: absolute;
-    top: 32%;
-    left: 47.3%;
-    transform: translate(-45%, -45%);
-    background: rgba(50, 0, 50, .3);
-    color: white;
-    padding: 40px;
-}
-
-.centered:hover {
-    background: rgba(50, 0, 50, .75);
-}
 
 .option {
     margin-top: 30px;
@@ -77,18 +78,16 @@ h2 {
 
 #quote-text {
     font-size: 30px;
-    margin: auto;
 }
 
 #savedQuoteP {
     display: inline-block;
-    font-size: 15px;
+    font-size: 25px;
     box-shadow: 5px 7px darkgray;
     width: 75%;
     background-color: rgba(50, 0, 50, .2);
     color: white;
-    font-family: 'Merriweather', serif;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -107,6 +106,7 @@ h2 {
     transition: ease-out 0.4s;
     outline: none;
   }
+
 
   #btn:hover,
   #clearBtn:hover {
