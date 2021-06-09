@@ -58,6 +58,7 @@ h2 {
     margin: auto;
 }
 
+
 #savedQuoteP {
     display: inline-block;
     font-size: 15px;
@@ -68,32 +69,17 @@ h2 {
     font-family: 'Merriweather', serif;
 }
 
-/*#btn,
-#saveBtn,
-#clearBtn {
-    border-radius: 10px;
-    padding: 5px;
-}
-
-#btn:hover,
-#saveBtn:hover,
-#clearBtn:hover {
-    background-color: purple;
-    color: white;
-}*/
-
-
 #btn,
 #saveBtn,
 #clearBtn  {
     color: black;
-    border: 2px solid purple;
+    border: 2px solid #C8A2C8;
     border-radius: 20px;
     padding: 18px 36px;
     font-size: 25px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 purple;
+    box-shadow: inset 0 0 0 0 #C8A2C8;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
@@ -102,12 +88,14 @@ h2 {
   #btn:hover,
   #saveBtn:hover,
   #clearBtn:hover {
-    box-shadow: inset 0 0 0 50px  purple;
+    box-shadow: inset 0 0 0 50px #C8A2C8;
     color: white;
   }
   
   .row {
     text-align: center;
   }
+
+  
 
   
