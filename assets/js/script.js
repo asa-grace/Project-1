@@ -53,10 +53,9 @@ function randomQuotes () {
     }) 
   })  
 }
-//For future Development: Generate gif of author
 
-// future gif generation for quotes
-/*function addGif() {
+/*For future Development: Generate gif of author
+function addGif() {
   fetch(
     'https://api.giphy.com/v1/gifs/random?&api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN'
   )

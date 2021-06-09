@@ -68,7 +68,7 @@ h2 {
     font-family: 'Merriweather', serif;
 }
 
-#btn,
+/*#btn,
 #saveBtn,
 #clearBtn {
     border-radius: 10px;
@@ -80,6 +80,34 @@ h2 {
 #clearBtn:hover {
     background-color: purple;
     color: white;
-}
+}*/
+
+
+#btn,
+#saveBtn,
+#clearBtn  {
+    color: black;
+    border: 2px solid purple;
+    border-radius: 20px;
+    padding: 18px 36px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 purple;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+
+  #btn:hover,
+  #saveBtn:hover,
+  #clearBtn:hover {
+    box-shadow: inset 0 0 0 50px  purple;
+    color: white;
+  }
+  
+  .row {
+    text-align: center;
+  }
 
   
