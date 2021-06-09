@@ -18,6 +18,8 @@ header {
 h1,
 p {
     font-weight: bolder;
+    font-size: 75px;
+
 }
 
 .quote-header {
