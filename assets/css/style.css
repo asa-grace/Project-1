@@ -66,7 +66,6 @@ h2 {
     margin: auto;
 }
 
-
 #savedQuoteP {
     display: inline-block;
     font-size: 15px;
@@ -75,13 +74,15 @@ h2 {
     background-color: rgba(50, 0, 50, .4);
     color: white;
     font-family: 'Merriweather', serif;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #btn,
 #saveBtn,
 #clearBtn  {
     color: black;
-    border: 2px solid rgba(50, 0, 50, 1);
+    border: 2px solid rgba(50, 0, 50, .4);
     border-radius: 20px;
     padding: 18px 36px;
     font-size: 25px;
