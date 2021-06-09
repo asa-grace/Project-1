@@ -12,7 +12,7 @@ function famousQuotes() {
       var generatedQuote = document.querySelector('#quote-text');
       generatedQuote.innerHTML = selectedQuote;
       //Event listener on the save button to store quote into local storage
-      document.querySelector('#saveBtn').addEventListener("click", function() {
+      document.querySelector('#famousSaveBtn').addEventListener("click", function() {
         localStorage.setItem("famousQuote" + i, selectedQuote);
     })
   });
@@ -32,7 +32,7 @@ function gameOfThrones() {
         var generatedQuote = document.querySelector('#quote-text');
         generatedQuote.innerHTML = selectedQuote;
         //Event listener on the save button to store quote into local storage
-        document.querySelector('#saveBtn').addEventListener("click", function(){
+        document.querySelector('#gotSaveBtn').addEventListener("click", function(){
           localStorage.setItem("gotQuote" + i, selectedQuote);
     }) 
   });
@@ -48,7 +48,7 @@ function randomQuotes () {
     var generatedQuote = document.querySelector('#quote-text');
     generatedQuote.innerHTML = selectedQuote;
     //Event listener on the save button to store quote into local storage
-    document.querySelector('#saveBtn').addEventListener("click", function() {
+    document.querySelector('#randomSaveBtn').addEventListener("click", function() {
       localStorage.setItem("randomQuote" + i, selectedQuote);
     }) 
   })  
@@ -88,7 +88,7 @@ function addGif() {
       var generatedQuote = document.querySelector('#quote-text');
       generatedQuote.innerHTML = selectedQuote + ' -Ron Swanson';
       //Event listener on the save button to store quote into local storage
-      document.querySelector('#saveBtn').addEventListener("click", function() {
+      document.querySelector('#ronSwansonSaveBtn').addEventListener("click", function() {
       localStorage.setItem("ronSwansonQuote" + i, selectedQuote + ' -Ron Swanson');
       }) 
     });

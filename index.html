@@ -47,9 +47,22 @@
             </div>
         </div>
 
-        <!-- save button -->
-        <button id="saveBtn" onClick="window.location.reload(true)">Save</button>
-
+        <!-- save buttons -->
+        <div class="row">
+            <div class ="option col-sm-3 button_slide slide_down" id="ronSwansonSaveBtn" onClick="window.location.reload(true)">
+                <button id="btn">Save Ron Swanson</button>
+            </div>
+            <div class ="option col-sm-3 button_slide slide_down" id="gotSaveBtn" onClick="window.location.reload(true)">
+                <button id="btn">Save GOT</button>
+            </div>
+            <div class ="option col-sm-3 button_slide slide_down" id="famousSaveBtn" onClick="window.location.reload(true)">
+                <button id="btn">Save Famous Quote </button>
+            </div>
+            <div class ="option col-sm-3 button_slide slide_down" id="randomSaveBtn" onClick="window.location.reload(true)">
+                <button id="btn">Save Random Quote</button>
+            </div>
+        </div>
+        <br>
         <button id="clearBtn" onclick="clearSavedQuotes()">Clear All</button>
 
         <div id="quoteStorage" class="option"></div>
