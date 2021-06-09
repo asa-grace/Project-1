@@ -78,6 +78,8 @@ h2 {
 #btn:hover,
 #saveBtn:hover,
 #clearBtn:hover {
-    background-color: blue;
+    background-color: purple;
     color: white;
 }
+
+  
