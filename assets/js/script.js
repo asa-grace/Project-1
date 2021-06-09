@@ -3,7 +3,6 @@ function famousQuotes() {
   fetch('https://quote-garden.herokuapp.com/api/v3/quotes')
     .then(function(response) {
       return response.json();
-      
     })
     .then(function(response) {
       //select a random quote from the API call
@@ -54,6 +53,7 @@ function randomQuotes () {
     }) 
   })  
 }
+//For future Development: Generate gif of author
 
 /*function randomGif() {
   fetch(
@@ -103,7 +103,6 @@ function randomQuotes () {
   function allStorage() {
     keys= Object.keys(localStorage),
     i=keys.length;
-
     while (i--) {
       storedQuotes.push(localStorage.getItem(keys[i]))
     }
@@ -122,7 +121,6 @@ function randomQuotes () {
     quoteStorageDiv.appendChild(createPara);
   };
   
-
   //function to clear local storage
   function clearSavedQuotes() {
     var savedQuoteEl = document.querySelector('#quoteStorage');
