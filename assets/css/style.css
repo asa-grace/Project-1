@@ -1,6 +1,10 @@
 * {
-    background-color: gainsboro;
-    text-align: center;
+    text-align: center; 
+}
+
+body {
+    background-image: url("https://cdn.onesearch.com/lo/api/res/1.2/_VDKmpUxeCZjhsREZEFUng--~B/YXBwaWQ9eWlzZWFyY2g7Zmk9Zml0O2dlPTAwNjYwMDtncz0wMEEzMDA7aD0zNjIxO3c9NjAwMA--/https://mocah.org/uploads/posts/5306315-mountain-blue-teal-range-mountain-range-layers-amazing-wallpaper-desktop-wallpaper-desktop-background-monochrome-layer-shape-minimalist-minimal-wallpaper-silhouette-light-shadow-landscape-natu.jpg.cf.jpg");
+    background-size: cover;
 }
 
 .page-title {
@@ -18,7 +22,10 @@ p {
     font-size: 75px;
 }
 
-.image {
+img {
+    border; 0;
+}
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +74,7 @@ h2 {
     font-size: 15px;
     box-shadow: 5px 7px darkgray;
     width: 75%;
-    background-color: rgba(50, 0, 50, .4);
+    background-color: rgba(50, 0, 50, .2);
     color: white;
     font-family: 'Merriweather', serif;
     padding: 10px;
