@@ -55,27 +55,25 @@ function randomQuotes () {
   })  
 }
 
-/*function randomGif() {
+// future gif generation for quotes
+/*function addGif() {
   fetch(
-    'https://api.giphy.com/v1/gifs/search?q=' +
-      searchTerm +
-      '&api_key:shY7gu7Sxp8RYk8JryZPL6kh3oLs7coO&limit=1'
+    'https://api.giphy.com/v1/gifs/random?&api_key=HvaacROi9w5oQCDYHSIk42eiDSIXH3FN'
   )
     .then(function(response) {
       return response.json();
     })
     .then(function(response) {
-      var responseContainerE1 = document.querySelector('#response-container');
-
-      responseContainerE1.innerHTML = '';
-
-      var gifImg = documentcreateElement('img');
-      gifImg.setAttribute('src', response.data[0].images.fixed_height.url);
-
-      responseContainerE1.appendChild(gifImg);
-
+      
+      var responseContainerEl = document.querySelector('#img');
+      
+      var gifImg = document.createElement('img');
+      
+      var displayImg =  response.data.image_url;
+      console.log(displayImg);
+      responseContainerEl.innerHTML = displayImg;
     });
-  }*/
+}*/
 
   function ronSwanson() {
     fetch(
