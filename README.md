@@ -1,3 +1,4 @@
+
 # Project 1
 ## Group Project
 ---
@@ -26,3 +27,4 @@ GitHub: https://github.com/asa-grace/Quote-Generator.git
 
 ## **Images:**
 ![Screenshot](assets/image/quotegenerator.jpg)
+
