@@ -1,3 +1,45 @@
+//Ron Swanson quotes API call
+function ronSwanson() {
+  fetch(
+    'https://ron-swanson-quotes.herokuapp.com/v2/quotes'
+  )
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(response) {
+    //Pull quote from API
+    var selectedQuote = response;
+    //Display Quote
+    var generatedQuote = document.querySelector('#quote-text');
+    generatedQuote.innerHTML = selectedQuote + '<br>' + '-Ron Swanson';
+    //Event listener on the save button to store quote into local storage
+    document.querySelector('#ronSwansonSaveBtn').addEventListener("click", function() {
+    localStorage.setItem("ronSwansonQuote" + i, selectedQuote + ' -Ron Swanson');
+    }) 
+  });
+}
+// GOT quote API call
+function gameOfThrones() {
+    fetch(
+      "https://game-of-thrones-quotes.herokuapp.com/v1/random"
+      )
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(response) {
+        //Select quote and author
+        var selectedQuote = response.sentence;
+        var author = response.character.name;
+        //Display quote
+        var generatedQuote = document.querySelector('#quote-text');
+        generatedQuote.innerHTML = selectedQuote + '<br>' + '-' + author;
+        //Event listener on the save button to store quote into local storage
+        document.querySelector('#gotSaveBtn').addEventListener("click", function(){
+          localStorage.setItem("gotQuote" + i, selectedQuote + '-' + author);
+    }) 
+  });
+}
+
 //Famous Quotes API call
 function famousQuotes() {
   fetch('https://quote-garden.herokuapp.com/api/v3/quotes')
@@ -7,49 +49,32 @@ function famousQuotes() {
     .then(function(response) {
       //select a random quote from the API call
       var indexSelect = [Math.floor(Math.random()*response.data.length)]; 
-      var selectedQuote = response.data[indexSelect].quoteText + '-' +  response.data[indexSelect].quoteAuthor;
+      var selectedQuote = response.data[indexSelect].quoteText;
+      var author = response.data[indexSelect].quoteAuthor;
       //Display quote
       var generatedQuote = document.querySelector('#quote-text');
-      generatedQuote.innerHTML = selectedQuote;
+      generatedQuote.innerHTML = selectedQuote +'<br>' + '-' + author;
       //Event listener on the save button to store quote into local storage
-      document.querySelector('#saveBtn').addEventListener("click", function() {
-        localStorage.setItem("famousQuote" + i, selectedQuote);
+      document.querySelector('#famousSaveBtn').addEventListener("click", function() {
+        localStorage.setItem("famousQuote" + i, selectedQuote + ' -' + author);
     })
   });
 }
 
-function gameOfThrones() {
-    fetch(
-      "https://game-of-thrones-quotes.herokuapp.com/v1/random"
-      )
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(response) {
-        //Select quote
-        var selectedQuote = response.sentence + '-' + response.character.name;
-        //Display quote
-        var generatedQuote = document.querySelector('#quote-text');
-        generatedQuote.innerHTML = selectedQuote;
-        //Event listener on the save button to store quote into local storage
-        document.querySelector('#saveBtn').addEventListener("click", function(){
-          localStorage.setItem("gotQuote" + i, selectedQuote);
-    }) 
-  });
-}
-
+//Random Quote API call
 function randomQuotes () {
   fetch('https://api.quotable.io/random')
   .then(response => response.json())
   .then(data => {
     //Select quote
-    var selectedQuote = `${data.content} —${data.author}`;
+    var selectedQuote = data.content;
+    var author = data.author;
     //Display quote
     var generatedQuote = document.querySelector('#quote-text');
-    generatedQuote.innerHTML = selectedQuote;
+    generatedQuote.innerHTML = selectedQuote + '<br>' + '-' + author;
     //Event listener on the save button to store quote into local storage
-    document.querySelector('#saveBtn').addEventListener("click", function() {
-      localStorage.setItem("randomQuote" + i, selectedQuote);
+    document.querySelector('#randomSaveBtn').addEventListener("click", function() {
+      localStorage.setItem("randomQuote" + i, selectedQuote + '-' + author);
     }) 
   })  
 }
@@ -74,25 +99,7 @@ function addGif() {
     });
 }*/
 
-  function ronSwanson() {
-    fetch(
-      'https://ron-swanson-quotes.herokuapp.com/v2/quotes'
-    )
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(response) {
-      //Pull quote from API
-      var selectedQuote = response;
-      //Display Quote
-      var generatedQuote = document.querySelector('#quote-text');
-      generatedQuote.innerHTML = selectedQuote + ' -Ron Swanson';
-      //Event listener on the save button to store quote into local storage
-      document.querySelector('#saveBtn').addEventListener("click", function() {
-      localStorage.setItem("ronSwansonQuote" + i, selectedQuote + ' -Ron Swanson');
-      }) 
-    });
-  }
+
   //Array that stores the quotes in order to display in 'Saved Quote' area
   var storedQuotes = [];
 

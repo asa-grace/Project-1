@@ -13,19 +13,22 @@
 </head>
 
 <header>
-    <h1 class="quote-header">Quote Generator</h1>
+    <div class="quote-header">
+        <h1>Quote Generator</h1>
+    </div>
+    <div class="page-title">
+        <h2>Select an option below to generate your quote of the day! Then save the quote for later reflection</h2>
+    </div>
 </header>
 
 <body>
     <main>
-        <div class="page-title">
-            <h2>Select an option below to generate your quote of the day! Then save the quote for later reflection</h2>
-        </div>
+        
 
         <!-- image container -->
         <div id="img" class="image-container">
-            <img src=" ./assets/image/sergey-pesterev-6KCnl-EgbiU-unsplash.png " width="1000 " height="600 ">
-            <div id='quote-text' class="centered">Your Daily Quote Awaits!</div>
+            <img src=" ./assets/image/sergey-pesterev-6KCnl-EgbiU-unsplash.png ">
+            <div class="centerContainer" id='quote-text'>Your Daily Quote Awaits!</div>
         </div>
 
         <!-- buttons -->
@@ -33,22 +36,40 @@
             <div id="ronSwanson" class="option col-sm-3 button_slide slide_down">
                 <button id="btn" onclick="ronSwanson()">Ron Swanson</button>
             </div>
-            <div id="movie" class="option col-sm-3 button_slide slide_down" onclick="gameOfThrones()">
-                <button id="btn">Game of Thrones</button>
+            <div id="movie" class="option col-sm-3 button_slide slide_down">
+                <button id="btn" onclick="gameOfThrones()">Game of Thrones</button>
             </div>
-            <div id="funny" class="option col-sm-3 button_slide slide_down" onclick="famousQuotes()">
-                <button id="btn">Famous Quotes</button>
+            <div id="funny" class="option col-sm-3 button_slide slide_down">
+                <button id="btn" onclick="famousQuotes()">Famous Quotes</button>
             </div>
-            <div id="random" class="option col-sm-3 button_slide slide_down" onclick="randomQuotes()">
-                <button id="btn">I'm feeling lucky</button>
+            <div id="random" class="option col-sm-3 button_slide slide_down">
+                <button id="btn" onclick="randomQuotes()">I'm feeling lucky</button>
             </div>
         </div>
 
-        <!-- save button -->
-        <button id="saveBtn" onClick="window.location.reload(true)">Save</button>
-
+        <!-- save buttons -->
+        <div class="row">
+            <!-- Ron Swanson Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="ronSwansonSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save Ron Swanson</button>
+            </div>
+            <!-- GOT Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="gotSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save GOT</button>
+            </div>
+            <!-- Famous Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="famousSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save Famous Quote </button>
+            </div>
+            <!-- Random Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="randomSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save Random Quote</button>
+            </div>
+        </div>
+        <br>
+        <!-- Clear Button -->
         <button id="clearBtn" onclick="clearSavedQuotes()">Clear All</button>
-
+        <!-- Saved Quote Div -->
         <div id="quoteStorage" class="option"></div>
     </main>
 </body>
