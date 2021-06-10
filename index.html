@@ -36,35 +36,40 @@
             <div id="ronSwanson" class="option col-sm-3 button_slide slide_down">
                 <button id="btn" onclick="ronSwanson()">Ron Swanson</button>
             </div>
-            <div id="movie" class="option col-sm-3 button_slide slide_down" onclick="gameOfThrones()">
-                <button id="btn">Game of Thrones</button>
+            <div id="movie" class="option col-sm-3 button_slide slide_down">
+                <button id="btn" onclick="gameOfThrones()">Game of Thrones</button>
             </div>
-            <div id="funny" class="option col-sm-3 button_slide slide_down" onclick="famousQuotes()">
-                <button id="btn">Famous Quotes</button>
+            <div id="funny" class="option col-sm-3 button_slide slide_down">
+                <button id="btn" onclick="famousQuotes()">Famous Quotes</button>
             </div>
-            <div id="random" class="option col-sm-3 button_slide slide_down" onclick="randomQuotes()">
-                <button id="btn">I'm feeling lucky</button>
+            <div id="random" class="option col-sm-3 button_slide slide_down">
+                <button id="btn" onclick="randomQuotes()">I'm feeling lucky</button>
             </div>
         </div>
 
         <!-- save buttons -->
         <div class="row">
-            <div class ="option col-sm-3 button_slide slide_down" id="ronSwansonSaveBtn" onClick="window.location.reload(true)">
-                <button id="btn">Save Ron Swanson</button>
+            <!-- Ron Swanson Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="ronSwansonSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save Ron Swanson</button>
             </div>
-            <div class ="option col-sm-3 button_slide slide_down" id="gotSaveBtn" onClick="window.location.reload(true)">
-                <button id="btn">Save GOT</button>
+            <!-- GOT Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="gotSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save GOT</button>
             </div>
-            <div class ="option col-sm-3 button_slide slide_down" id="famousSaveBtn" onClick="window.location.reload(true)">
-                <button id="btn">Save Famous Quote </button>
+            <!-- Famous Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="famousSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save Famous Quote </button>
             </div>
-            <div class ="option col-sm-3 button_slide slide_down" id="randomSaveBtn" onClick="window.location.reload(true)">
-                <button id="btn">Save Random Quote</button>
+            <!-- Random Save Button -->
+            <div class ="option col-sm-3 button_slide slide_down" id="randomSaveBtn">
+                <button id="saveBtn" onClick="window.location.reload(true)">Save Random Quote</button>
             </div>
         </div>
         <br>
+        <!-- Clear Button -->
         <button id="clearBtn" onclick="clearSavedQuotes()">Clear All</button>
-
+        <!-- Saved Quote Div -->
         <div id="quoteStorage" class="option"></div>
     </main>
 </body>
